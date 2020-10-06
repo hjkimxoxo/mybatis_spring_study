@@ -38,7 +38,7 @@ public class TransactionServiceTest {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(1, "테스크포스", 10);
 		Employee employee = new Employee(1004, "박신혜", "3", new Employee(4377), 4100000, department);
-		service.registerTransaction(department, employee);
+		service.trRegister(department, employee);
 		//expected 나오면 파란색됨
 		
 	}
@@ -48,14 +48,14 @@ public class TransactionServiceTest {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(5, "테스크포스", 10);
 		Employee employee = new Employee(1003, "박신혜", "3", new Employee(4377), 4100000, department);
-		service.registerTransaction(department, employee);
+		service.trRegister(department, employee);
 	}
 	@Test
 	public void test3RegisterTransaction_Success() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(5, "테스크포스", 10);
 		Employee employee = new Employee(1004, "박신혜", "3", new Employee(4377), 4100000, department);
-		service.registerTransaction(department, employee);
+		service.trRegister(department, employee);
 	}
 
 	@Test
@@ -63,7 +63,7 @@ public class TransactionServiceTest {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(5);
 		Employee employee = new Employee(1004);
-		service.unRegisterTransaction(department, employee);
+		service.trUnRegister(department, employee);
 	}
 
 }
