@@ -1,5 +1,7 @@
 package mybatis_spring_study.service;
 
+import java.sql.SQLException;
+
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.junit.After;
@@ -37,7 +39,7 @@ public class TransactionServiceTest {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(1, "태스크포스", 11); 
 		Employee employee = new Employee(1004, "박신혜", "3", new Employee(4377), 4100000, department);
-		service.registerTransaction(department, employee);
+		service.trRegister(department, employee);
 	}
 	
 	//@Test(expected = DuplicateKeyException.class)
@@ -45,7 +47,7 @@ public class TransactionServiceTest {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(5, "태스크포스", 11); 
 		Employee employee = new Employee(1003, "박신혜", "3", new Employee(4377), 4100000, department);
-		service.registerTransaction(department, employee);
+		service.trRegister(department, employee);
 	}
 	
 	@Test
@@ -53,7 +55,7 @@ public class TransactionServiceTest {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(5, "태스크포스", 11); 
 		Employee employee = new Employee(1004, "박신혜", "3", new Employee(4377), 4100000, department);
-		service.registerTransaction(department, employee);
+		service.trRegister(department, employee);
 	}
 	
 	////////////////////
@@ -64,7 +66,7 @@ public class TransactionServiceTest {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(6);
 		Employee employee = new Employee(1004);
-		service.unRegisterTransaction(department, employee);
+		service.trUnRegister(department, employee);
 	}
 	
 	@Test(expected = RuntimeException.class)
@@ -72,15 +74,15 @@ public class TransactionServiceTest {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(4);
 		Employee employee = new Employee(1005);
-		service.unRegisterTransaction(department, employee);
+		service.trUnRegister(department, employee);
 	}
 	
 	@Test
-	public void test06UnRegisterTransaction_success() {
+	public void test06UnRegisterTransaction_success() throws SQLException {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(5);
 		Employee employee = new Employee(1004);
-		service.unRegisterTransaction(department, employee);
+		service.trUnRegister(department, employee);
 	}
 	
 
