@@ -37,3 +37,50 @@
 [DEBUG] [2020-10-06 12:35] ==>  Preparing: delete from employee where empno = ?
 [DEBUG] [2020-10-06 12:35] ==> Parameters: 1219(Integer)
 [DEBUG] [2020-10-06 12:35] <==    Updates: 1
+[DEBUG] [2020-10-06 12:47] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 12:47] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 12:47] ==> Parameters: 1(Integer), 태스크포스(String), 10(Integer)
+[DEBUG] [2020-10-06 12:47] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 12:47] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 12:47] ==> Parameters: 1(Integer), 태스크포스(String), 10(Integer)
+[DEBUG] [2020-10-06 12:47] test02RegisterTransaction_empFail()
+[DEBUG] [2020-10-06 12:47] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 12:47] ==> Parameters: 5(Integer), 태스크포스(String), 10(Integer)
+[DEBUG] [2020-10-06 12:47] <==    Updates: 1
+[DEBUG] [2020-10-06 12:47] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 12:47] ==> Parameters: 1003(Integer), 박신혜(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 12:47] test03RegisterTransaction_success()
+[DEBUG] [2020-10-06 12:47] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 12:47] ==> Parameters: 5(Integer), 태스크포스(String), 10(Integer)
+[DEBUG] [2020-10-06 12:47] <==    Updates: 1
+[DEBUG] [2020-10-06 12:47] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 12:47] ==> Parameters: 1004(Integer), 박신혜(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 12:47] <==    Updates: 1
+[DEBUG] [2020-10-06 14:11] testUnRegisterTransaction()
+[DEBUG] [2020-10-06 14:11] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 14:11] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 14:13] testUnRegisterTransaction()
+[DEBUG] [2020-10-06 14:13] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 14:13] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 14:14] testUnRegisterTransaction()
+[DEBUG] [2020-10-06 14:14] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 14:14] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 14:15] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 14:15] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 14:15] ==> Parameters: 1(Integer), 태스크포스(String), 10(Integer)
+[DEBUG] [2020-10-06 14:15] test02RegisterTransaction_empFail()
+[DEBUG] [2020-10-06 14:15] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 14:15] ==> Parameters: 5(Integer), 태스크포스(String), 10(Integer)
+[DEBUG] [2020-10-06 14:15] <==    Updates: 1
+[DEBUG] [2020-10-06 14:15] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 14:15] ==> Parameters: 1003(Integer), 박신혜(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 14:15] test03RegisterTransaction_success()
+[DEBUG] [2020-10-06 14:15] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 14:15] ==> Parameters: 5(Integer), 태스크포스(String), 10(Integer)
+[DEBUG] [2020-10-06 14:15] <==    Updates: 1
+[DEBUG] [2020-10-06 14:15] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 14:15] ==> Parameters: 1004(Integer), 박신혜(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 14:15] <==    Updates: 1
+[DEBUG] [2020-10-06 14:15] testUnRegisterTransaction()
+[DEBUG] [2020-10-06 14:15] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 14:15] ==> Parameters: 5(Integer)
