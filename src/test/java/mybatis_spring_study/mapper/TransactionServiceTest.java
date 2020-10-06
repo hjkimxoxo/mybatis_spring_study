@@ -38,28 +38,33 @@ public class TransactionServiceTest {
 	@Test(expected = DuplicateKeyException.class)
 	public void test01RegisterTransaction_deptFail() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-		Department department = new Department(1, "태스크포스", 10); // DuplicateKeyException
+		Department department = new Department(1, "태스크포스", 10); 
 		Employee employee = new Employee(1004, "박신혜", "3", new Employee(4377), 4100000, department);
 		service.registerTransaction(department, employee);
 	}
-	//@Test(expected = DuplicateKeyException.class)
+	
+	@Test(expected = DuplicateKeyException.class)
 	public void test02RegisterTransaction_empFail() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-		Department department = new Department(5, "태스크포스", 10); // DuplicateKeyException
+		Department department = new Department(5, "태스크포스", 10); 
 		Employee employee = new Employee(1003, "박신혜", "3", new Employee(4377), 4100000, department);
 		service.registerTransaction(department, employee);
 	}
-	//@Test
+	
+	@Test
 	public void test03RegisterTransaction_success() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-		Department department = new Department(5, "태스크포스", 10); // DuplicateKeyException
+		Department department = new Department(5, "태스크포스", 10); 
 		Employee employee = new Employee(1004, "박신혜", "3", new Employee(4377), 4100000, department);
 		service.registerTransaction(department, employee);
 	}
 
-	@Test
+	@Test(expected=RuntimeException.class)
 	public void testUnRegisterTransaction() {
-		fail("Not yet implemented");
+		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
+		Department department = new Department(5);
+		Employee employee = new Employee(1004);
+		service.unRegisterTransaction(department, employee);
 	}
 
 }

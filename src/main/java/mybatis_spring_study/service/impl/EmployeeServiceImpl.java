@@ -1,4 +1,4 @@
-package mybatis_spring_study.mapper.impl;
+package mybatis_spring_study.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
