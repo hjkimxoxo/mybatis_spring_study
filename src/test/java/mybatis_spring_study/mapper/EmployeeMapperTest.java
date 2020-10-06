@@ -47,6 +47,7 @@ public class EmployeeMapperTest {
 	public void testDeleteEmployee() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Employee emp = new Employee(1219);
+		System.out.println(emp);
 		int res = dao.deleteEmployee(emp);
 		Assert.assertEquals(1, res);
 		

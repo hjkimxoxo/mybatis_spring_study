@@ -10,4 +10,5 @@
 	delete from employee where empno = #{empNo}
 	</delete>
 	
+	<select id="selectEmployeeByNo" parameterType="Employee"></select>
 </mapper>

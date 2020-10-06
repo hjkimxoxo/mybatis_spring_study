@@ -84,3 +84,236 @@
 [DEBUG] [2020-10-06 14:15] testUnRegisterTransaction()
 [DEBUG] [2020-10-06 14:15] ==>  Preparing: delete from department where deptno = ?
 [DEBUG] [2020-10-06 14:15] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 15:09] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:09] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:09] ==> Parameters: 1(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:12] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:12] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:12] ==> Parameters: 1(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:12] test02RegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:12] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:12] ==> Parameters: 5(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:12] <==    Updates: 1
+[DEBUG] [2020-10-06 15:12] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:12] ==> Parameters: 1003(Integer), ë°•ì‹ í˜œ(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:12] test03RegisterTransaction_success()
+[DEBUG] [2020-10-06 15:12] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:12] ==> Parameters: 5(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:12] <==    Updates: 1
+[DEBUG] [2020-10-06 15:12] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:12] ==> Parameters: 1004(Integer), ë°•ì‹ í˜œ(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:12] <==    Updates: 1
+[DEBUG] [2020-10-06 15:12] test04UnRegisterTransaction()
+[DEBUG] [2020-10-06 15:12] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:12] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:12] <==    Updates: 1
+[DEBUG] [2020-10-06 15:12] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:12] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 15:12] <==    Updates: 1
+[DEBUG] [2020-10-06 15:16] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:16] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:16] ==> Parameters: 1(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:16] test02RegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:16] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:16] ==> Parameters: 5(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:16] <==    Updates: 1
+[DEBUG] [2020-10-06 15:16] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:16] ==> Parameters: 1003(Integer), ë°•ì‹ í˜œ(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:16] test03RegisterTransaction_success()
+[DEBUG] [2020-10-06 15:16] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:16] ==> Parameters: 5(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:16] <==    Updates: 1
+[DEBUG] [2020-10-06 15:16] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:16] ==> Parameters: 1004(Integer), ë°•ì‹ í˜œ(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:16] <==    Updates: 1
+[DEBUG] [2020-10-06 15:17] test04UnRegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:17] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:17] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:17] <==    Updates: 1
+[DEBUG] [2020-10-06 15:17] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:17] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 15:17] <==    Updates: 1
+[DEBUG] [2020-10-06 15:17] test05UnRegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:17] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:17] ==> Parameters: 1005(Integer)
+[DEBUG] [2020-10-06 15:17] <==    Updates: 0
+[DEBUG] [2020-10-06 15:17] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:17] ==> Parameters: 4(Integer)
+[DEBUG] [2020-10-06 15:17] <==    Updates: 1
+[DEBUG] [2020-10-06 15:17] test06UnRegisterTransaction_success()
+[DEBUG] [2020-10-06 15:17] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:17] ==> Parameters: 1003(Integer)
+[DEBUG] [2020-10-06 15:18] test03RegisterTransaction_success()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 5(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1004(Integer), ë°•ì‹ í˜œ(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] test04UnRegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 6(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 0
+[DEBUG] [2020-10-06 15:18] test05UnRegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1005(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 0
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 4(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] test06UnRegisterTransaction_success()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1003(Integer)
+[DEBUG] [2020-10-06 15:18] test04UnRegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 6(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 0
+[DEBUG] [2020-10-06 15:18] test05UnRegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1005(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 0
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 4(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] test06UnRegisterTransaction_success()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:18] test02RegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 5(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1003(Integer), ë°•ì‹ í˜œ(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:18] test03RegisterTransaction_success()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 5(Integer), íƒœìŠ¤í¬í¬ìŠ¤(String), 10(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1004(Integer), ë°•ì‹ í˜œ(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] test04UnRegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 6(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 0
+[DEBUG] [2020-10-06 15:18] test05UnRegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1005(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 0
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 4(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] test06UnRegisterTransaction_success()
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:18] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:18] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 15:18] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1(Integer), ÅÂ½ºÅ©Æ÷½º(String), 10(Integer)
+[DEBUG] [2020-10-06 15:28] test02RegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 5(Integer), ÅÂ½ºÅ©Æ÷½º(String), 10(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1003(Integer), ¹Ú½ÅÇı(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:28] test03RegisterTransaction_success()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 5(Integer), ÅÂ½ºÅ©Æ÷½º(String), 10(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1004(Integer), ¹Ú½ÅÇı(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] test04UnRegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 6(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 0
+[DEBUG] [2020-10-06 15:28] test05UnRegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1005(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 0
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 4(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] test06UnRegisterTransaction_success()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] test01SelectDepartmentByAll()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: SELECT DEPTNO, DEPTNAME, FLOOR FROM DEPARTMENT
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 
+[TRACE] [2020-10-06 15:28] <==    Columns: DEPTNO, DEPTNAME, FLOOR
+[TRACE] [2020-10-06 15:28] <==        Row: 1, ¿µ¾÷, 8
+[TRACE] [2020-10-06 15:28] <==        Row: 2, ±âÈ¹, 10
+[TRACE] [2020-10-06 15:28] <==        Row: 3, °³¹ß, 9
+[TRACE] [2020-10-06 15:28] <==        Row: 4, ÃÑ¹«, 7
+[DEBUG] [2020-10-06 15:28] <==      Total: 4
+[DEBUG] [2020-10-06 15:28] test02SelectDepartmentByNo()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: SELECT DEPTNO, DEPTNAME, FLOOR FROM DEPARTMENT WHERE DEPTNO = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1(Integer)
+[TRACE] [2020-10-06 15:28] <==    Columns: DEPTNO, DEPTNAME, FLOOR
+[TRACE] [2020-10-06 15:28] <==        Row: 1, ¿µ¾÷, 8
+[DEBUG] [2020-10-06 15:28] <==      Total: 1
+[DEBUG] [2020-10-06 15:28] testDeleteEmployee()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1219(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 0
+[DEBUG] [2020-10-06 15:28] testAddEmployee()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1219(Integer), ±èÇıÁø(String), 5(String), 4377(Integer), 2000000(Integer), 3(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] testDelEmployee()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1219(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] test01RegisterTransaction_deptFail()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1(Integer), ÅÂ½ºÅ©Æ÷½º(String), 10(Integer)
+[DEBUG] [2020-10-06 15:28] test02RegisterTransaction_empFail()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 5(Integer), ÅÂ½ºÅ©Æ÷½º(String), 10(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1003(Integer), ¹Ú½ÅÇı(String), 3(String), 4377(Integer), 4100000(Integer), 5(Integer)
+[DEBUG] [2020-10-06 15:28] test03RegisterTransaction_success()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: insert into department values(?, ?, ?)
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 5(Integer), ÅÂ½ºÅ©Æ÷½º(String), 10(Integer)
+[DEBUG] [2020-10-06 15:28] testUnRegisterTransaction()
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from department where deptno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 5(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 1
+[DEBUG] [2020-10-06 15:28] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:28] ==> Parameters: 1004(Integer)
+[DEBUG] [2020-10-06 15:28] <==    Updates: 0
+[DEBUG] [2020-10-06 15:29] testDeleteEmployee()
+[DEBUG] [2020-10-06 15:29] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 15:29] ==> Parameters: 1219(Integer)
+[DEBUG] [2020-10-06 15:29] <==    Updates: 0
+[DEBUG] [2020-10-06 15:29] testInsertEmployee()
+[DEBUG] [2020-10-06 15:29] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 15:29] ==> Parameters: 1219(Integer), ê¹€í˜œì§„(String), 5(String), 4377(Integer), 2000000(Integer), 3(Integer)
+[DEBUG] [2020-10-06 15:29] <==    Updates: 1
+[DEBUG] [2020-10-06 15:30] testDeleteEmployee()
