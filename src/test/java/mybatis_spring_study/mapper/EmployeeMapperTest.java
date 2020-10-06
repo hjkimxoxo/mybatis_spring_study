@@ -1,7 +1,5 @@
 package mybatis_spring_study.mapper;
 
-import static org.junit.Assert.*;
-
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.junit.After;
@@ -13,7 +11,6 @@ import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
 
 import mybatis_spring_study.config.ContextRoot;
 import mybatis_spring_study.dto.Department;
@@ -35,8 +32,8 @@ public class EmployeeMapperTest {
 	private EmployeeMapper dao;
 	
 
-	//@Test
-	public void testInsertEmployee() {
+	@Test
+	public void test01InsertEmployee() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Employee emp = new Employee(1219, "김혜진", "5", new Employee(4377), 2000000, new Department(3));
 		int res = dao.insertEmployee(emp);
@@ -44,12 +41,20 @@ public class EmployeeMapperTest {
 	}
 
 	@Test
-	public void testDeleteEmployee() {
+	public void test03DeleteEmployee() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-		Employee emp = new Employee(1219);
-		System.out.println(emp);
+		Employee emp = dao.selectEmployeeByNo(new Employee(1219));
 		int res = dao.deleteEmployee(emp);
 		Assert.assertEquals(1, res);
+		
+	}
+	
+	@Test
+	public void test02SelectEmp() {
+		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
+		Employee emp = dao.selectEmployeeByNo(new Employee(1219));
+		Assert.assertNotNull(emp);
+		System.out.println(emp);
 		
 	}
 

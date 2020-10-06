@@ -29,6 +29,7 @@ public class TransactionServiceImpl implements TransactionService {
 	}
 
 	@Override
+	@Transactional
 	public void unRegisterTransaction(Department department, Employee employee) {
 		int res = deptMapper.deleteDepartment(department);
 		res += empMapper.deleteEmployee(employee);
