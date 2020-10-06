@@ -1,0 +1,39 @@
+[DEBUG] [2020-10-06 11:53] testInsertEmployee()
+[DEBUG] [2020-10-06 11:53] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 11:53] ==> Parameters: 1219(Integer), 김혜진(String), 5(String), 4377(Integer), 2000000(Integer), 3(Integer)
+[DEBUG] [2020-10-06 11:53] <==    Updates: 1
+[DEBUG] [2020-10-06 11:54] testDeleteEmployee()
+[DEBUG] [2020-10-06 11:54] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 11:54] ==> Parameters: 1219(Integer)
+[DEBUG] [2020-10-06 11:54] <==    Updates: 1
+[DEBUG] [2020-10-06 11:55] testInsertEmployee()
+[DEBUG] [2020-10-06 11:55] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 11:55] ==> Parameters: 1219(Integer), 김혜진(String), 5(String), 4377(Integer), 2000000(Integer), 3(Integer)
+[DEBUG] [2020-10-06 11:55] <==    Updates: 1
+[DEBUG] [2020-10-06 11:56] test01SelectDepartmentByAll()
+[DEBUG] [2020-10-06 11:56] ==>  Preparing: SELECT DEPTNO, DEPTNAME, FLOOR FROM DEPARTMENT
+[DEBUG] [2020-10-06 11:56] ==> Parameters: 
+[TRACE] [2020-10-06 11:56] <==    Columns: DEPTNO, DEPTNAME, FLOOR
+[TRACE] [2020-10-06 11:56] <==        Row: 1, 영업, 8
+[TRACE] [2020-10-06 11:56] <==        Row: 2, 기획, 10
+[TRACE] [2020-10-06 11:56] <==        Row: 3, 개발, 9
+[TRACE] [2020-10-06 11:56] <==        Row: 4, 총무, 7
+[DEBUG] [2020-10-06 11:56] <==      Total: 4
+[DEBUG] [2020-10-06 11:56] test02SelectDepartmentByNo()
+[DEBUG] [2020-10-06 11:56] ==>  Preparing: SELECT DEPTNO, DEPTNAME, FLOOR FROM DEPARTMENT WHERE DEPTNO = ?
+[DEBUG] [2020-10-06 11:56] ==> Parameters: 1(Integer)
+[TRACE] [2020-10-06 11:56] <==    Columns: DEPTNO, DEPTNAME, FLOOR
+[TRACE] [2020-10-06 11:56] <==        Row: 1, 영업, 8
+[DEBUG] [2020-10-06 11:56] <==      Total: 1
+[DEBUG] [2020-10-06 11:56] testDeleteEmployee()
+[DEBUG] [2020-10-06 11:56] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 11:56] ==> Parameters: 1219(Integer)
+[DEBUG] [2020-10-06 11:56] <==    Updates: 1
+[DEBUG] [2020-10-06 12:35] testAddEmployee()
+[DEBUG] [2020-10-06 12:35] ==>  Preparing: insert into employee (empno, empname, title, manager, salary, dno) values (?, ?, ?, ?, ?, ?)
+[DEBUG] [2020-10-06 12:35] ==> Parameters: 1219(Integer), 김혜진(String), 5(String), 4377(Integer), 2000000(Integer), 3(Integer)
+[DEBUG] [2020-10-06 12:35] <==    Updates: 1
+[DEBUG] [2020-10-06 12:35] testDelEmployee()
+[DEBUG] [2020-10-06 12:35] ==>  Preparing: delete from employee where empno = ?
+[DEBUG] [2020-10-06 12:35] ==> Parameters: 1219(Integer)
+[DEBUG] [2020-10-06 12:35] <==    Updates: 1
