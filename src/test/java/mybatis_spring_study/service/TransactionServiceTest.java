@@ -48,7 +48,7 @@ public class TransactionServiceTest {
 		service.registerTransaction(department, employee);
 	}
 	
-	//@Test
+	@Test
 	public void test03RegisterTransaction_success() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		Department department = new Department(5, "태스크포스", 11); 
@@ -78,8 +78,8 @@ public class TransactionServiceTest {
 	@Test
 	public void test06UnRegisterTransaction_success() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
-		Employee employee = new Employee(1004);
 		Department department = new Department(5);
+		Employee employee = new Employee(1004);
 		service.unRegisterTransaction(department, employee);
 	}
 	
